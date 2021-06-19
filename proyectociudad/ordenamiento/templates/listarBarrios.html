@@ -1,0 +1,9 @@
+<h3>Barrios</h3>
+<ul>
+    {% for e in barrio %}
+    <li>
+        {{ e.nombre }} - [<a href="{% url 'editarBarrio' e.id %}">Editar</a>]
+    </li>
+    {% endfor %}
+</ul>
+[<a href="{% url 'index' %}">inicio</a>]
